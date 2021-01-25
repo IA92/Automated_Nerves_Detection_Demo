@@ -29,18 +29,13 @@ def demoFile (fileName, dArea, fileDir, slicePath, annotPath):
     annotList=getRowsFromCSV(os.path.join(annotPath,'AnnotFile '+fileName+'.csv'),'List') 
     
     imDemo=returnSlideArea_Demo(slicePath, fileName, dArea[fileName])
-    print("Drawing original image")
-    display(Image.fromarray(np.array(imDemo,'uint8')))
 
     print("Colour filter output")
     cfOut=filterColourRange(rgb2hsv(np.array(imDemo[:,:,:3],'uint8')),[0.04,0.2,0.4],[0.2,1.,1.])
     display(Image.fromarray(cfOut*255))
 
-    print("Drawing manual annotation by experts")
-    display(drawListOfPredBoxes_Demo(imDemo, dArea[fileName], annotList,(255,0,0)))
-
-    print("Drawing predictions by model")
-    display(drawListOfPredBoxes_Demo(imDemo, dArea[fileName], predLoc,(0,255,0)))
+    print("Drawing manual annotation (red) and predictions by model (green)")
+    display(drawListOfPredBoxes_Demo(drawListOfPredBoxes_Demo(imDemo, dArea[fileName], annotList,(255,0,0)), dArea[fileName], predLoc,(0,255,0)))
 
 def getRowsFromCSV_Demo(filePath):
     """Extract row data from column 0 to 4 from CSV file and store it in list    
