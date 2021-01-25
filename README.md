@@ -25,7 +25,11 @@ It consists of step-by-step guide/tutorial for nerves segmentation approach on i
 4. Ensure that the annotation files (e.g. AnnotFile xxxxx.csv) are in dataFiles>"annot csv" folder.
 5. Ensure that the pretrained model (e.g. pretrained_DL-B.h5) is in dataFiles>"pretrained models" folder.
 6. Ensure that sArea.csv and sArea_Demo.csv files are in dataFiles folder.
-5. Run the jupyter notebook (i.e. Nerves Segmentation Demo.ipynb).
+7. Run the jupyter notebook (i.e. Nerves Segmentation Demo.ipynb).
+8. For visualisation of the complete results, 
+   - download extra>DrawingPredictionLabels.groovy
+   - ensure the file path to the prediction file "PredFile xxxxx.csv" is correct
+   - run the script on QuPath, download here https://qupath.github.io/, under the menu bar find the groovy script in Automate>Project scripts.
 
 # Acknowledgements
 Keras: Keras.io
