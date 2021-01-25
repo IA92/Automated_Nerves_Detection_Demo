@@ -1,10 +1,10 @@
-# Automated_Nerves_Detection
-An automated nerves detection implementation with a deep learning based approach.  
+# Automated Nerves Quantification
+An automated nerves quantification implementation with a deep learning segmentation model.  
 
 Architecture based on Keras.
 
 The code is in jupyter notebook. 
-It consists of step-by-step guide/tutorial for an automated nerves detection implementation on immunohistochemistry specimens of thyroid cancer. 
+It consists of step-by-step guide/tutorial for nerves segmentation approach on immunohistochemistry specimens of thyroid cancer. 
 
 # Getting Started
 1. Download the repository.
@@ -25,7 +25,7 @@ It consists of step-by-step guide/tutorial for an automated nerves detection imp
 4. Ensure that the annotation files (e.g. AnnotFile xxxxx.csv) are in dataFiles>"annot csv" folder.
 5. Ensure that the pretrained model (e.g. pretrained_DL-B.h5) is in dataFiles>"pretrained models" folder.
 6. Ensure that sArea.csv and sArea_Demo.csv files are in dataFiles folder.
-5. Run the jupyter notebook.
+5. Run the jupyter notebook (i.e. Nerves Segmentation Demo.ipynb).
 
 # Acknowledgements
 Keras: Keras.io
