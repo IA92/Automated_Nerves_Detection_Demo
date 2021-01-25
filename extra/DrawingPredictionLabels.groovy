@@ -18,10 +18,8 @@ def pathObject = new PathAnnotationObject(roi)
 def rgb = getColorRGB(0, 200, 0)
 def pathClass = getPathClass('Prediction', rgb)
 
-//Path to file that contains rows of x,y,w,h 
+//Path to prediction file that contains rows of x,y,w,h 
 def file = new File('D:/UniData/Chris Dataset/pred csv/PredFile'+imageData.toString().split(',')[-1]+'.csv')
-//def file = new File('D:/UniData/Chris Dataset/roi csv/RoiFile'+imageData.toString().split(',')[-1]+'.csv')
-//def file = new File('D:/UniData/Chris Dataset/annot neg csv/NegAnnotFile'+imageData.toString().split(',')[-1]+'.csv')
 
 // Index offset where the x,y,w,h columns start 
 idxOffset=0
