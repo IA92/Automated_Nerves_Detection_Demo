@@ -30,6 +30,7 @@ It consists of step-by-step guide/tutorial for nerves segmentation approach on i
    - download extra>DrawingPredictionLabels.groovy
    - ensure the file path to the prediction file "PredFile xxxxx.csv" is correct
    - run the script on QuPath, download here https://qupath.github.io/, under the menu bar find the groovy script in Automate>Project scripts.
+9. For direct deep learning approach, replace all the python files in the main folder with the python files in the Direct_Deep_Learning folder as there are some changes in path and file names that is made in the associated functions for the direct deep learning script to run appropriately.
 
 # Acknowledgements
 Keras: Keras.io
