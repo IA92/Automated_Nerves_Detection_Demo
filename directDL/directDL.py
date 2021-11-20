@@ -46,7 +46,7 @@ def predictDirectDL(model, xTrainMean, xTrainStd, slicePath, fileName, sArea, sL
     except KeyError:
         slideArea=[0,0,slide.dimensions[0],slide.dimensions[1]]
     #Getting the number of slide divider by dividing the sArea by the patch size
-    sDividerW=np.ceil(sArea[fileName][2]/dsF/patchSize);sDividerH=np.ceil(sArea[fileName][3]/dsF/patchSize) 
+    sDividerW=np.ceil(slideArea[2]/dsF/patchSize);sDividerH=np.ceil(slideArea[3]/dsF/patchSize) 
     #Getting the downsampled area of the slide to be processed
     sLevelW=int(np.ceil(slideArea[2]/dsF));sLevelH=int(np.ceil(slideArea[3]/dsF))
     #Getting the initial x, y coordinate of the area to be processed
