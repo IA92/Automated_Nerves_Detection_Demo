@@ -153,6 +153,7 @@ def get_CNN(inputShape, chN=3, lr = 1e-4, loss='binary_crossentropy', metrics=['
     model.compile(optimizer = Adam(lr = 1e-4), loss = loss, metrics = metrics)
     if modelFile!="":
         try:
+            model.load_weights(modelFile)
             print("Model loaded: "+str(modelFile))
         except NameError:
             print("Can't find model, no model loaded")
